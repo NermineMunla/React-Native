@@ -1,5 +1,6 @@
 import Expo from "expo";
 import React from "react";
+import { View } from "react-native";
 import { SpinImageView } from "./SpinImageView";
 
 const array = [
@@ -36,7 +37,9 @@ export default class App extends React.Component {
  
   render() {
     return (
+      <View style={{backgroundColor: 'white', flex:1}}>
       <SpinImageView imagesArray= {array}></SpinImageView>
+      </View>
     );
   }
 }
